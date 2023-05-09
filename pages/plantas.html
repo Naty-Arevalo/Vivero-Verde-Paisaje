@@ -10,60 +10,57 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Vivero Verde Paisaje</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+          </button>
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/plantas.html">Plantas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/semillas-organicas.html">Semillas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Accesorios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../pages/accesorios.html">Macetas</a></li>
+                  <li><a class="dropdown-item" href="../pages/accesorios.html">Sustratos</a></li>
+                  <li><a class="dropdown-item" href="../pages/accesorios.html">Deco & Home</a></li>
+                  <li><a class="dropdown-item" href="../pages/accesorios.html">Composteras</a></li>
+                  <li><a class="dropdown-item" href="../pages/accesorios.html">Fertilizantes y plagicidas</a></li>
+                  <li><a class="dropdown-item" href="../pages/accesorios.html">Herramientas</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar">
           <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">Vivero Verde Paisaje</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-              </span>
-            </button>
-            <div class="navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/plantas.html">Plantas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/semillas-organicas.html">Semillas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Accesorios
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Macetas</a></li>
-                    <li><a class="dropdown-item" href="#">Sustratos</a></li>
-                    <li><a class="dropdown-item" href="#">Deco & Home</a></li>
-                    <li><a class="dropdown-item" href="#">Composteras</a></li>
-                    <li><a class="dropdown-item" href="#">Fertilizantes y plagicidas</a></li>
-                    <li><a class="dropdown-item" href="#">Herramientas</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+            <form class="d-flex ">
+              <input class="form-control me-2" type="search"  placeholder="Buscar Productos" aria-label="Search"> 
+              <button class="btn btn-outline-success" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+              </button>
+            </form>
           </div>
-          <div class="navbar">
-            <div class="container-fluid">
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search"> 
-                <button class="btn btn-outline-success">
-                  <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-                  </div>
-                </button>
-              </form>
-            </div>
-          </div>
-        </nav>        
+        </div>
+        <div class="carrito">
+          <a href=""><img src="../img/carrito-de-compras.png" alt="carrito-de-compras"></a>
+        </div>
+      </nav>               
     </header>
     <main class="cuerpo">
         <section class="plantas">
@@ -74,7 +71,7 @@
             <div class="categorias">
                 <h2>CATEGORIAS</h2>
                 <input type="checkbox" id="menu">
-                <label for="menu">Ver</label>
+                <label for="menu">Ver Categorias</label>
                 <ul>
                     <li><a href="">Plantas de Interior</a></li>
                     <li><a href="">Plantas de Exterior</a> </li>
@@ -87,40 +84,40 @@
                     <p>IN-FAL-TA-BLES!</p>
                 </div>
                 <div class="GridItem img-1">
-                    <img src="../img/img-cinco.jpg" alt="">
+                    <img src="../img/img-cinco.jpg" alt="palo de agua">
                 </div>
                 <div  class="GridItem">
-                    <img src="../img/img-tres.jpg" alt="">
+                    <img src="../img/img-tres.jpg" alt="potus">
                 </div>
                 <div class="GridItem">
-                    <img src="../img/img-cuatro.jpg" alt="">
+                    <img src="../img/img-cuatro.jpg" alt="carnivora">
                 </div>
                 <div class="GridItem">
-                    <img src="../img/img-dos.jpg" alt="">
+                    <img src="../img/img-dos.jpg" alt="margarita">
                 </div>
                 <div class="GridItem">
-                    <img src="../img/img-seis.jpg" alt="">
+                    <img src="../img/img-seis.jpg" alt="suculenta">
                 </div>
                 <div class="GridItem">
-                    <img src="../img/img-siete.jpg" alt=""></div>
+                    <img src="../img/img-siete.jpg" alt="sansevieria"></div>
                 <div class="GridItem img-7">
-                    <img src="../img/img-13.jpg" alt=""></div>
+                    <img src="../img/img-13.jpg" alt="monstera"></div>
                 <div class="GridItem">
-                    <img src="../img/img-nueve.jpg" alt=""></div>
+                    <img src="../img/img-nueve.jpg" alt="suculenta"></div>
                 <div class="GridItem img-9">
-                    <img src="../img/img-diez.jpg" alt=""></div>
+                    <img src="../img/img-diez.jpg" alt="grra de oso"></div>
                 <div class="GridItem">
-                    <img src="../img/img-once.jpg" alt=""></div>
+                    <img src="../img/img-once.jpg" alt="cactus"></div>
                 <div class="GridItem">
-                    <img src="../img/img-doce.jpg" alt=""></div>
+                    <img src="../img/img-doce.jpg" alt="cactus"></div>
                 <div class="GridItem">
-                    <img src="../img/img-quince.jpg" alt=""></div>
+                    <img src="../img/img-quince.jpg" alt="malbon"></div>
                 <div class="GridItem">
-                    <img src="../img/img-catorce.jpg" alt=""></div>
+                    <img src="../img/img-catorce.jpg" alt="flor"></div>
                 <div class="GridItem">
-                    <img src="../img/img-ocho.jpg" alt=""></div>
+                    <img src="../img/img-ocho.jpg" alt="suculenta"></div>
                 <div class="GridItem">
-                    <img src="../img/img-dieciseis.jpg" alt=""></div>
+                    <img src="../img/img-dieciseis.jpg" alt="flor"></div>
             </div>
         </section>
            
@@ -137,7 +134,7 @@
                     <li><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="redes">
                 <p>SEGUINOS EN NUESTRAS REDES</p>
                 <img src="../img/face.png" alt="logo facebook">
                 <img src="../img/instagramch.png" alt="logo instagram">

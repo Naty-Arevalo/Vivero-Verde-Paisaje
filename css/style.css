@@ -17,7 +17,7 @@
 /*----HEADER----*/
 
 header{
-    background-color: rgb(178, 240, 84);
+    background-color: rgb(129, 183, 46);
     position: sticky;
     top: 0;
     font-family: shadows into light;
@@ -38,20 +38,33 @@ header label{
     font-weight: 100;
     font-style: italic;
 }
+.navbar-expand-lg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-light .navbar-brand{
+    color: rgba(14 94 12 / 90%);
+}
+.d-flex{
+    display: block! important;
+    width: 100%;
+}
 a{
-    color: rgba(23 92 23 / 62%);
+   
     font-size: 30px;
     font-family: shadows into light;
 }
-a:hover{
-    color: black;
+.navbar-light .navbar-brand:hover{
+    color: #f9fafb8f;
 }
-.nav-link{
-    color: rgba(41, 143, 41, 62%);
+.navbar-light .navbar-nav .nav-link{
+    color: rgba(14 94 12 / 90%);
  
 }
-.nav-link:hover{
-    color: black;
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #f9fafb8f;
     
 }
 
@@ -81,7 +94,9 @@ a.dropdown-item{
     border-radius: 10px;
     background-color: rgba(245, 245, 220, 0.471);
 }
-
+div .carrito {
+    margin: 20px;
+}
 /*----MAIN----*/
 
 main .cuerpo{
@@ -150,10 +165,10 @@ section div h3{
 .destacados h2{
     font-style: italic;
     font-size: 50px;
-    color: rgb(3, 106, 3);
+    color: rgb(14 94 12 / 90%);
     text-align: center;
     padding: 10px;
-    background-color: rgb(178, 240, 84); 
+    background-color: rgb(129 183 46); 
     margin-top: 20px;
     font-family: shadows into light;
 }
@@ -197,10 +212,10 @@ section div h3{
 .ofertas h2{
     font-style: italic;
     font-size: 50px;
-    color: rgb(3, 106, 3);
+    color: rgb(14 94 12 / 90%);
     text-align:center;
     padding: 10px;
-    background-color: rgb(178, 240, 84); ;
+    background-color: rgb(129 183 46); ;
     margin-top: 20px;
     font-family: shadows into light;
 }
@@ -241,9 +256,27 @@ section div h3{
 .ofertas div h3{
     font-size: 20px;
 }
-.btn-ofertas{
-    font-family:shadows into light;
+.btnOfertas{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+    margin: 10px;
+}
+.btnOfertas button{
+    font-family: shadows into light;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(12 94 12 / 90%);
+    padding: 10px;
+    background-color: rgb(129 183 46);
+    border: 1px solid rgb(14 94 12 / 90%);
+    border-radius:15px ;
+}
+.btnOfertas button:hover{
+    color: white;
+    background-color: black;
 }
 .varios p{
     font-weight: 500px;
@@ -333,6 +366,9 @@ section div h3{
 .categorias label{
     display: none;
 }
+.categorias form-select{
+    display: none;
+}
 .categorias ul li a{
     text-decoration:underline;
     color: darkgreen;
@@ -395,7 +431,7 @@ section div h3{
     font-style: italic;
     font-family:shadows into light ;
     font-size: 50px;
-    background-color: rgb(178, 240, 84);
+    background-color: rgb(129 183 46);
     text-align: center;
 }
 .gridItem{
@@ -437,6 +473,7 @@ section div h3{
 }
 .semillasEnlace li a{
     text-decoration: none;
+    color: black;
 }
 
 /*---ACCESORIOS---*/
@@ -467,7 +504,7 @@ section div h3{
 /*----FOOTER---*/
 
 footer{
-    background-color: rgb(178, 240, 84);
+    background-color: rgb(129 183 46);
     font-family:shadows into light;
     font-weight: 300;
     color: black;
@@ -505,12 +542,13 @@ footer div h2{
 /*!! MEDIA QUERY-------------------------*/
 
 @media screen and (max-width:1260px){
-    
-    .categorias{
-        margin: 0;
-        padding: 0;
+    header{
+        position: static;
     }
-    
+    .nav-link{
+        padding: 0%;
+        font-size: 25px;
+    }
     .categorias ul{
         display: flex;
         flex-direction: row;
@@ -521,14 +559,19 @@ footer div h2{
         padding: 5px;
     }
     .categorias h2{
-        display: block;
-        text-align: center;
+    display: none;
     }
 }
+@media screen and (max-width:990px){
+    
+    }
 
 
 @media screen and (max-width:700px){
-
+    header{
+        position:static;
+        
+    }
 
     .varios p{
         font-weight: 250px;
@@ -595,21 +638,22 @@ footer div h2{
     }
     .categorias label{
         box-sizing: border-box;
-        display: inline-block;
+        display:inline-block;
         border: 1px solid darkgreen;
         border-radius: 5px;
-        width: 80px;
+        width: 100%;
         height: 30px;
         font-family:shadows into light;
-        font-size: 1rem;
+        font-size: 1,5rem;
         color: darkgreen;
-        text-decoration:underline;
+        margin-bottom: 5px;
         text-align: center;
+        padding: 5px 
+        ;
         
 
     }
-
-
+   
 
     #carouselExampleCaptions div img{
         height: 300px;
@@ -662,6 +706,24 @@ footer div h2{
     .hero p{
         padding: 10px;
         border: none;
+    }
+    .navbar-brand{
+        font-size: 40px;
+    }
+    .bases .basesEnlaces li a{
+        font-size: 20px;
+    }
+    .redes img{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .redes p{
+        display: none;
+    }
+    .basesTres p{
+        margin: 0;
+        font-size: 15px;
     }
 }
 
