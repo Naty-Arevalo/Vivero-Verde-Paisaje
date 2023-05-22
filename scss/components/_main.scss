@@ -3,7 +3,7 @@
     background-color: nth($background, 2);
     .hero{
         background-image:
-        url(../img/viveropasto.jpg) ;
+        url(../img/viveropasto.png)  ;
         @include medidas (100%, 600px);
         background-repeat: no-repeat;
         background-size: cover;
