@@ -1,0 +1,323 @@
+@media screen and (max-width:1260px){
+    header{
+        position: static;
+        .a{
+            padding: 0%;
+            font-size: 25px;
+        }     
+    }
+    .categorias{
+        h2{
+            display: none;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            li{
+                a{
+                    margin: 5px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:920px){
+    .semillasOr{
+        .semillas{
+            h1{
+            }
+            div{
+                p{
+                  font-size: 25px;  
+                }
+            }
+        }
+        .guia{
+            flex-direction: column-reverse;
+            img{
+            }
+            div{
+            }
+        }
+    }
+}
+@media screen and (max-width:700px){
+    header{
+        position:static;
+        
+    }
+    .varios p{
+        font-weight: 250px;
+        font-size: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+    footer{
+        .bases{
+            margin: 0;
+            padding: 0 0 0 0;
+            div{
+                margin: 0px;
+                padding: 2px;
+                .basesEnlaces{
+                   
+                }
+            }
+            .redes{
+                margin-left: 30px;
+                padding: 2px;
+            }
+            div{
+                margin: 20px;
+            }
+        }
+    }
+    .plantas-1{
+        .plantas{
+        }
+        .armado{
+            .categorias{
+
+            }
+            .gridGaleria{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: 90px, 150px, 150px,150px, 150px, 150px, 150px,150px ;
+                gap: 10px;
+                grid-template-areas:
+                "texto texto texto"
+                "foto foto foto"
+                "foto foto foto"
+                "foto foto foto"
+                "foto foto foto"
+                "foto foto foto"
+                "foto foto foto"
+                "foto foto foto"
+                "foto foto foto" ;
+                .texto{
+
+                }
+                .GridItem{
+
+                }
+                .img-1{
+
+                }
+                .img-7{
+                    grid-row: span 1;
+                }
+                .img-9{}
+            }
+        }
+    }
+    .contacto1{
+        .contacto{
+            h1{
+            }
+            p{
+                font-size: 30px;
+            }
+            div{
+            }
+        }
+    }  
+}
+@media screen and (max-width:550px){
+    .semillasOr{
+        .semillas{
+        }
+        .guia{
+            img{
+                @include medidas (350px, 400px);
+            }
+        }
+    }
+}
+@media screen and (max-width:470px){
+    .btn{
+        display: none;
+    }
+    header{
+        .navegador{
+            .container-div{
+                .titulo{
+                    font-size: 35px;
+                }
+            }
+        }
+        
+    }
+    .hero{
+        height: 300px;
+        h2{   
+            font-size: 30px;
+            padding: 10px             
+        }
+        p{
+        padding: 10px;
+        border: none;
+        }
+    }
+    .cuerpo{
+        section{
+            .carousel-img{
+                .carus-inn{
+                    .carus-itm{
+                        .img-carus{
+                            height: 300px;
+                            padding: 0;
+                            margin-top: 5px;
+                        }
+                        .carus-cap{
+                            h5{
+                                font-size: 25px; 
+                                padding: 2px;
+                            }
+                            p{
+                                font-size: 15px;
+                            }
+                        }
+                        .opcion{
+                            p{
+                                display: none; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .varios{
+        p{
+            font-size: 30px;
+            padding: 30px;
+        }
+    }  
+    .plantas-1{
+        .plantas{
+        }
+        .armado{
+            .categorias{
+                @include flex (flex, center, center);
+                flex-direction: row;
+                h2{
+                }
+                input{
+                    display: none;
+                    &:checked ~ ul{
+                    display: block;
+                    }
+                }
+                label{
+                    box-sizing: border-box;
+                    display:inline-block;
+                    border: 1px solid $color-principal;
+                    border-radius: 5px;
+                    @include medidas (100%, 30px);
+                    font-family:$font;
+                    font-size: 1,5rem;
+                    color: $color-principal;
+                    margin-bottom: 5px;
+                    text-align: center;
+                    padding: 5px;
+                }
+                ul{
+                    display: none;
+                }
+            }
+            .gridGaleria{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 50px, 100px, 100px,100px, 100px, 100px, 100px,100px, 100px,100px ;
+                gap: 10px;  
+                grid-template-areas:
+                "texto texto"
+                "foto foto"
+                "foto foto"
+                "foto foto"
+                "foto foto"
+                "foto foto"
+                "foto foto"
+                "foto foto"
+                "foto foto"
+                "foto foto"
+                "foto foto"
+                "foto foto" ;
+                .texto{}
+                .GridItem{}
+                .img-1{
+                    grid-row: span 1;
+                }
+                .img-9{
+                    grid-column: span 1;
+                }
+            }
+        }
+    }
+    .semillasOr{
+        .semillas{
+            h1{
+                font-size: 35px;
+            }
+        }
+        div{
+            p{
+                font-size:20px; 
+            }
+        }
+        .guia{
+            img{
+                @include medidas (300px, 350px);
+            }
+        }
+    }
+    .accesorios1{
+        h1{
+
+        }
+        .accesorios{
+            .titulo-link{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .contacto1{
+        .contacto{
+            h1{
+            }
+            p{
+                font-size: 25px;
+            }
+            div{
+            }
+        }
+    }  
+    .bases{
+        div{
+            .basesEnlaces{
+                font-size: 20px;
+            }
+        }
+        .redes{
+            p{
+                display: none;
+            }
+            img{
+                margin: 10px;
+                @include flex (flex, center, center);
+                flex-direction: column;
+            }
+        }  
+    }
+    .basesTres{
+        p{
+            margin: 0;
+            font-size: 15px;
+        }
+    }
+}  

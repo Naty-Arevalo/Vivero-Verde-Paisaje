@@ -1,0 +1,71 @@
+.accesorios1{
+    background-color: nth($background, 2);
+    h1{
+        font-size: 50px;
+        font-weight:600;
+        padding: 20px;
+        font-family: $font;
+        text-align: center;
+        color: $color-principal;
+    }
+    .accesorios{
+        .titulo-link{
+            @include flex (flex, space-around, center);
+            margin: 20px;
+            font-family: $font;
+            h2{
+                font-size: 40px;
+                color: $color-principal;
+                padding: 5px;
+                margin: 5px;
+                font-weight: 600;
+            }
+            a{
+                text-decoration: none;
+                color: $color-terciario;
+                font-size: 25px;
+                text-decoration:underline;
+                transition: 1s;
+                &:hover{
+                    font-weight: 800;
+                    font-size: 30px;
+                }
+            }
+        }
+        .destacadosCaja{
+            @include flex (flex, space-evenly, center);        
+            .destacadosCajaMenor{
+                @include medidas (200px, 350px);
+                    border: 2px solid black; 
+                    border-radius: 10px;
+                    margin: 20px;
+                    text-align: center;
+                    box-shadow:4px 5px 58px 15px rgba(0,0,0,0.57);
+                    -webkit-box-shadow: 4px 5px 58px 15px rgba(0,0,0,0.57);
+                    -moz-box-shadow: 4px 5px 58px 15px rgba(0,0,0,0.57);
+                img{
+                    @include medidas (80%, 200px);
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.6);
+                    }
+                }
+                h3{
+                    font-size: 20px;
+                }
+                a{
+                    background-color: nth($background, 3);
+                        color: $color-secondary;
+                        font-size: 30px;
+                        font-family:$font;
+                        &:hover{
+                            background-color: nth($background, 6);
+                            color: $color-terciario;
+                            
+                        }
+                }
+            }
+        }
+    }
+    
+}

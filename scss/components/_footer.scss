@@ -1,0 +1,31 @@
+footer{
+    background-color: nth($background, 1);
+    font-family: $font;
+    font-weight: 300;
+    color: $color-terciario;
+    .bases{
+        @include flex (flex, space-around, center);
+        padding: 0px 20px 20px 0px;
+        flex-direction: row;   
+        div{
+            .basesEnlaces{
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: $color-terciario;
+                        font-size: 25px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+    .basesTres{
+        @include flex (flex, space-around, center);
+        background-color: nth($background, 3);
+        color: $color-secondary;
+        width: 100%;
+        font-size: 20px;
+    }
+}

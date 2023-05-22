@@ -52,7 +52,6 @@ header label{
     width: 100%;
 }
 a{
-   
     font-size: 30px;
     font-family: shadows into light;
 }
@@ -60,8 +59,7 @@ a{
     color: #f9fafb8f;
 }
 .navbar-light .navbar-nav .nav-link{
-    color: rgba(14 94 12 / 90%);
- 
+    /* color: rgba(14 94 12 / 90%); */
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color: #f9fafb8f;

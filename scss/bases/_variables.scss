@@ -1,0 +1,29 @@
+//*  VARIABLES
+$color-principal: rgba(14 94 12 / 90%);
+$color-secondary: #ffff;
+$color-terciario: #000000;
+$font:'Shadows Into Light';
+$font-secundaria:'Montserrat', sans-serif;
+
+//* LISTAS
+
+$background:
+rgb(129, 183, 46),
+rgba(178, 240, 84, 0.705),
+black,
+rgba(255, 255, 255, 0.495),
+rgba(0, 0, 0, 0.478),
+white;
+
+//*MIXINS
+
+@mixin flex ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin medidas ($width, $height) {
+    width: $width;
+    height: $height;
+}

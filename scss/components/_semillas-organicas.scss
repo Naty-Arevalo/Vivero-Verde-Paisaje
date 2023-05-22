@@ -1,0 +1,85 @@
+.semillasOr{
+    background-color: nth($background,2 );
+    .semillas{
+        font-family: $font ;
+        h1{
+            font-size: 50px;
+            font-weight:600;
+            padding: 20px;
+            text-align: center;
+            color: $color-principal;
+        }
+        div{
+            p{
+                font-size: 40px;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 10px;
+                color: $color-principal;
+            }
+            .semillasEnlace{
+                font-size: 30px;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $color-principal;
+                        &:hover{
+                            background-color: nth($background, 3);
+                            color: $color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .guia{
+        @include flex (flex, center, center);
+        flex-direction: row-reverse;
+        img{
+            @include medidas (500px, 600px );
+        }
+        div{
+            width:50% ;
+            padding: 10px;
+            h2{
+                font-size: 28px;
+                text-align: center;
+            }
+            .guiaP{
+                text-align: center;
+                font-size:18px;
+            }        
+        }    
+    }
+    .semillasVta{
+        h3{
+            font-family: $font;
+            color: $color-principal;
+            background-color: nth($background, 2);
+            text-align: center;
+            font-weight: 600;
+            margin: 20px;
+            font-size: 40px;
+
+        }
+        .semillasVenta{
+            @include flex (flex, space-around, center);
+            .variedades{
+                border: 2px solid white;
+                box-shadow: 29px 3px 35px 10px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 29px 3px 35px 10px rgba(0,0,0,0.75);
+                -moz-box-shadow: 29px 3px 35px 10px rgba(0,0,0,0.75);               
+                a{
+                    img{
+                    @include medidas (200px, 200px);
+                    }
+                }
+                h4{
+                    text-align: center;
+                }
+
+            }
+                
+        }
+    }
+}

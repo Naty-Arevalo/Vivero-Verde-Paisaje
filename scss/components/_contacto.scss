@@ -1,0 +1,86 @@
+.contacto1{
+    background-color: nth($background, 2);
+    .contacto{
+        h1{
+            font-size: 50px;
+            font-weight:600;
+            padding: 20px;
+            font-family: $font;
+            text-align: center;
+            color: $color-principal;
+        }
+        p{
+            font-family: $font;
+            font-size: 40px;
+        }
+        div{
+            ul{
+                li{
+                    font-size: $font;
+                    color: $color-principal;
+                    font-size:20px ;
+
+                }
+            }
+        }
+
+    }
+    section{
+        iframe{
+
+        }
+    }
+    .mensaje{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 25px;
+        .texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            h2{
+
+            }
+            p{
+
+            }
+            a{
+                img{
+
+                }
+            }
+        }
+        .msj{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            p{
+                font-size: 30px;
+                font-weight: 600;
+            }
+            form{
+                .msj1{
+                    label{
+
+                    }
+                    input{
+
+                    }
+                    h3{
+
+                    }
+                    textarea{
+
+                    }
+                }
+            }
+        }
+    }
+}

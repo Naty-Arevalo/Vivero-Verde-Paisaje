@@ -1,0 +1,72 @@
+header{
+    background-color: nth($background, 1);
+    position: sticky;
+    top: 0;
+    font-family: $font;
+    z-index: 10;   
+    .navegador{
+        @include flex (flex, space-around, center);
+        flex-direction: row;
+        .container-div{
+            .titulo{
+                font-size: 50px;
+                font-weight: 100;
+                font-style: italic;
+                color: $color-principal;
+                &:hover{
+                    color: #f9fafb8f;
+                }
+            }
+            .div-collapse{               
+                .navbar-ul{
+                    margin-left: 30px;                   
+                    .nav-li{                        
+                        .a{
+                            color: $color-principal;
+                            font-size: 30px;
+                            font-family: $font;
+                            &:hover{
+                                color: #f9fafb8f;
+                            }
+                        }
+                    }
+                    .nav-list{
+                        .ul-menu{
+                            li{
+                                .li-menu{
+                                    font-size: 20px;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .nav-dos{
+            .div-dos{
+                .d-form{
+                    display: block! important;
+                    width: 100%;
+                    .form-input{
+                        border: 2px solid black;
+                        border-radius: 10px;
+                        background-color: rgba(245, 245, 220, 0.471);
+                        &:hover {
+                            border: 5px solid black;
+                        }
+                    }
+                    .btn{
+                        color: $color-terciario;
+                        border-color:black;
+                        border-radius: 10px;
+                        background-color: rgba(245, 245, 220, 0.471);
+                    }
+                }
+            }
+        }
+        .carrito{
+            margin: 20px;
+        }
+    }
+}
