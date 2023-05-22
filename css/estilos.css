@@ -11,7 +11,7 @@
 }
 
 header {
-  background-color: rgb(129, 183, 46);
+  background-color: rgb(72, 145, 19);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -74,7 +74,7 @@ header .navegador .carrito {
   background-color: rgba(178, 240, 84, 0.705);
 }
 .cuerpo .hero {
-  background-image: url(../img/viveropasto.png);
+  background-image: url(../img/viveropasto.jpg);
   width: 100%;
   height: 600px;
   background-repeat: no-repeat;
@@ -132,7 +132,7 @@ header .navegador .carrito {
   color: rgba(14, 94, 12, 0.9);
   text-align: center;
   padding: 10px;
-  background-color: rgb(129, 183, 46);
+  background-color: rgb(72, 145, 19);
   margin-top: 20px;
   font-family: "Shadows Into Light";
 }
@@ -180,7 +180,7 @@ header .navegador .carrito {
   color: rgba(14, 94, 12, 0.9);
   text-align: center;
   padding: 10px;
-  background-color: rgb(129, 183, 46);
+  background-color: rgb(72, 145, 19);
   margin-top: 20px;
   font-family: "Shadows Into Light";
 }
@@ -234,9 +234,9 @@ header .navegador .carrito {
   font-family: "Shadows Into Light";
   font-size: 15px;
   font-weight: 300;
-  color: rgba(14, 94, 12, 0.9);
+  color: white;
   padding: 10px;
-  background-color: rgb(129, 183, 46);
+  background-color: rgb(72, 145, 19);
   border: 1px solid rgba(14, 94, 12, 0.9);
   border-radius: 15px;
 }
@@ -286,7 +286,7 @@ header .navegador .carrito {
 }
 
 footer {
-  background-color: rgb(129, 183, 46);
+  background-color: rgb(72, 145, 19);
   font-family: "Shadows Into Light";
   font-weight: 300;
   color: #000000;
@@ -696,7 +696,7 @@ footer .basesTres {
   .hero {
     height: 300px;
   }
-  .hero h2 {
+  .hero h1 {
     font-size: 30px;
     padding: 10px;
   }
@@ -783,20 +783,24 @@ footer .basesTres {
   .contacto1 .contacto p {
     font-size: 25px;
   }
-  .bases div .basesEnlaces {
+  footer .bases div {
+    margin: 0;
+    padding: 0;
+  }
+  footer .bases div .basesEnlaces {
     font-size: 20px;
   }
-  .bases .redes p {
+  footer div .redes p {
     display: none;
   }
-  .bases .redes img {
+  footer div .redes img {
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .basesTres p {
+  footer div .basesTres div p {
     margin: 0;
     font-size: 15px;
   }

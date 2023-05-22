@@ -3,7 +3,7 @@
     background-color: nth($background, 2);
     .hero{
         background-image:
-        url(../img/viveropasto.png) ;
+        url(../img/viveropasto.jpg) ;
         @include medidas (100%, 600px);
         background-repeat: no-repeat;
         background-size: cover;
@@ -167,7 +167,7 @@
                 font-family: $font;
                 font-size: 15px;
                 font-weight: 300;
-                color: $color-principal;
+                color: $color-secondary;
                 padding: 10px;
                 background-color: nth($background, 1);
                 border: 1px solid rgb(14 94 12 / 90%);

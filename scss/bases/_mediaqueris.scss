@@ -152,7 +152,7 @@
     }
     .hero{
         height: 300px;
-        h2{   
+        h1{   
             font-size: 30px;
             padding: 10px             
         }
@@ -296,28 +296,53 @@
             div{
             }
         }
-    }  
-    .bases{
+    }
+    footer{
+        .bases{
+            div{
+                margin: 0;
+                padding: 0;
+                .basesEnlaces{
+                    font-size: 20px;
+                    li{
+                        a{}
+                    }
+                }
+            }
+        }
         div{
-            .basesEnlaces{
-                font-size: 20px;
+            .redes{
+                p{
+                    display: none;
+                }
+                img{
+                    margin: 10px;
+                    @include flex (flex, center, center);
+                    flex-direction: column;
+                }
             }
         }
-        .redes{
-            p{
-                display: none;
+        div{
+            h2{
+                ul{
+                    li{
+                        a{
+                        }
+                    }
+                }
             }
-            img{
-                margin: 10px;
-                @include flex (flex, center, center);
-                flex-direction: column;
-            }
-        }  
-    }
-    .basesTres{
-        p{
-            margin: 0;
-            font-size: 15px;
         }
-    }
+        div{
+            .basesTres{
+                div{
+                    
+                    p{
+                        margin: 0;
+                        font-size: 15px;
+                        
+                    }
+                }
+            }
+        }
+    }  
 }  
