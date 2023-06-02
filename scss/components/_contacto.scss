@@ -12,72 +12,117 @@
         p{
             font-family: $font;
             font-size: 40px;
+            text-align: center;
         }
-        div{
-            ul{
-                li{
-                    font-size: $font;
-                    color: $color-principal;
-                    font-size:20px ;
-
+        .direcc{
+            
+            padding: 10px;
+            margin-top: 30px;
+            @include flex (flex, space-around, center );
+            flex-direction: row;
+            div{
+                svg{
+                    margin: 5px;
+    
+                }
+                .ubicacion{
+                    font-family: $font;
+                    font-size: 30px;
+                    font-weight: 50;
+                }
+                .ubicacion1{
+                    font-size: 20px;
+                    text-align: left;
                 }
             }
         }
+        hr{
+            border-top: 1px, solid, black;
+            border-bottom: 1px solid black;
+            height: 2px;
+            width: 50%; 
+            margin-left: 25%;   
+            margin-top:15px;  
+        }    
 
     }
-    section{
-        iframe{
-
+    .contacRedes{
+        @include flex (flex, space-around, center);
+        flex-direction: row;
+        padding: 10px;
+        margin: 40px;
+        div{
+            svg{
+                margin: 5px;
+            }
+            p{
+                font-family: $font;
+                font-size: 30px;
+                font-weight: 50;
+                text-align: center;
+            }
+        }
+        div{
+            display: flex;
+            flex-direction: column;
         }
     }
+    hr{
+        border-top: 1px, solid, black;
+        border-bottom: 1px solid black;
+        height: 2px;
+        width: 50%; 
+        margin-left: 25%;   
+        margin-top:15px;  
+    }    
+    
     .mensaje{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         margin-top: 25px;
+        padding: 15px;
         .texto{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 20px;
-            h2{
-
-            }
-            p{
-
-            }
-            a{
-                img{
-
-                }
-            }
+            border: 1px solid rgba(0, 0, 0, 0.452);
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 2px 4px 77px 5px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 2px 4px 77px 5px rgba(0,0,0,0.75);
+            -moz-box-shadow: 2px 4px 77px 5px rgba(0,0,0,0.75);
         }
         .msj{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
-
+            border: 1px solid rgba(0, 0, 0, 0.452);
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 2px 4px 77px 5px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 2px 4px 77px 5px rgba(0,0,0,0.75);
+            -moz-box-shadow: 2px 4px 77px 5px rgba(0,0,0,0.75);
             p{
                 font-size: 30px;
                 font-weight: 600;
             }
             form{
+                
                 .msj1{
-                    label{
-
-                    }
+                    margin: 5px;
                     input{
-
-                    }
-                    h3{
-
-                    }
+                        width: 100%;
+                        border: solid white;
+                        border-radius: 10px;
+                        }
                     textarea{
-
+                        border: solid white;
+                        border-radius: 10px;
                     }
                 }
             }
