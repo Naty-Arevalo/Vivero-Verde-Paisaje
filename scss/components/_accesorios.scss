@@ -45,9 +45,10 @@
                     -moz-box-shadow: 4px 5px 58px 15px rgba(0,0,0,0.57);
                 img{
                     @include medidas (80%, 200px);
+                    border-radius: 10px;
                     transition: 1s;
                     &:hover{
-                        transform: scale(1.6);
+                        transform: scale(1.4);
                     }
                 }
                 h3{
