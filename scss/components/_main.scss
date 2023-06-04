@@ -94,6 +94,7 @@
                 }
                 img{
                     @include medidas (100%, 200px);
+                    border-radius: 10px;
                 }
                 h3{
                     font-size: 20px;
