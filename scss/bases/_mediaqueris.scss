@@ -265,13 +265,45 @@
             p{
                 font-size: 20px;
             }
-            div{
+            .direcc{
+                div{
+                    iframe{
+                        width: 90%;
+                    }
+                }
             }
         }
-        .msj{
-            margin: 15px;
-            padding: 15px;
+        .mensaje{
+            .texto{
+                h2{
+                }
+                p{
+
+                }
+                a{
+
+                }
+            }
+            .msj{
+                margin:1px;
+                padding: 0px;
+                p{
+                    font-size: 20px;
+                }
+                form{
+                    .msj1{
+                        input{
+                            width: 90%;
+                        }
+                        textarea{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+            
         }
+        
     }
     footer{
         .bases{

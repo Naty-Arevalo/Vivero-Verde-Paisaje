@@ -70,24 +70,19 @@
     hr{
         border-top: 1px, solid, black;
         border-bottom: 1px solid black;
-        height: 2px;
-        width: 50%; 
+        @include medidas (50%, 2px); 
         margin-left: 25%;   
         margin-top:15px;  
     }    
     
     .mensaje{
-        display: flex;
+        @include flex (flex, space-around, center);
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
         margin-top: 25px;
         padding: 15px;
         .texto{
-            display: flex;
+            @include flex (flex, center, center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             margin: 20px;
             border: 1px solid rgba(0, 0, 0, 0.452);
             margin: 10px;
@@ -97,10 +92,8 @@
             -moz-box-shadow: 2px 4px 77px 5px rgba(0,0,0,0.75);
         }
         .msj{
-            display: flex;
+            @include flex (flex, center, center);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             border: 1px solid rgba(0, 0, 0, 0.452);
             margin: 10px;
             padding: 10px;

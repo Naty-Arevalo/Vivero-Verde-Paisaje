@@ -79,15 +79,14 @@
                 grid-area: texto;
                 color: darkgreen;
                 font-style: italic;
-                font-family:shadows into light ;
+                font-family:$font ;
                 font-size: 50px;
-                background-color: rgb(129 183 46);
+                background-color: nth($background, 1);
                 text-align: center;
             }
             .GridItem{
                 img{
-                    width: 100%;
-                    height: 100%;
+                    @include medidas (100%, 100%);
                     object-fit: cover;
                     box-shadow: -43px 5px 104px -3px rgba(0,0,0,0.57);
                     -webkit-box-shadow: -43px 5px 104px -3px rgba(0,0,0,0.57);
@@ -98,9 +97,6 @@
                         transform: scale(1.1);
                         
                     }
-                }
-                P{
-                    display: none;
                 }
             }
             .img-1{

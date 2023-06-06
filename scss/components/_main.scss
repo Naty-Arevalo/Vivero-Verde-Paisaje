@@ -2,7 +2,7 @@
     font-style: italic;
     background-color: nth($background, 2);
     .hero{
-        background-image:
+        background: linear-gradient(rgba(0, 128, 0, 0.426), rgba(0, 0, 0, 0.568) ),
         url(../img/viveropasto.png)  ;
         @include medidas (100%, 600px);
         background-repeat: no-repeat;
@@ -19,6 +19,7 @@
         h1{
             font-size: 50px;
             padding: 20px;
+            font-style: italic;
         }
         p{
             padding: 30px;
@@ -74,7 +75,6 @@
             background-color: nth($background, 1); 
             margin-top: 20px;
             font-family: $font;
-
         }
         .destacadosCaja{
             @include flex (flex, space-evenly, center);
